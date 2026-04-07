@@ -42,10 +42,11 @@ public class practiceJava {
 //        practiceJava t13 = new practiceJava();
 //        System.out.println(t13.in1To10(11, false));
         // task-14
-        practiceJava t14 = new practiceJava();
-        System.out.println(t14.old35(15));
+//        practiceJava t14 = new practiceJava();
+//        System.out.println(t14.old35(15));
         // task-15
         practiceJava t15 = new practiceJava();
+        System.out.println(t15.teenSum(10, 13));
     }
 
     // end of main method
@@ -256,6 +257,18 @@ public class practiceJava {
             return true;
         } else{
             return false;
+        }
+    }
+    public int teenSum(int a, int b){
+
+        if (a >= 13 && a <= 19){
+            return 19;
+        }
+        else if (b >= 13 && b <= 19){
+            return 19;
+        }
+        else{
+            return a + b;
         }
     }
 }
