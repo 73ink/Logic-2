@@ -33,10 +33,11 @@ public class practiceJava {
 //        practiceJava t10 = new practiceJava();
 //        System.out.println(t10.blueTicket(9, 1, 0));
         // task-11
-        practiceJava t11 = new practiceJava();
-        System.out.println(t11.dateFashion(5, 10));
+//        practiceJava t11 = new practiceJava();
+//        System.out.println(t11.dateFashion(5, 10));
         // task-12
         practiceJava t12 = new practiceJava();
+        System.out.println(t12.sortaSum(9, 4));
         // task-13
         practiceJava t13 = new practiceJava();
         // task-14
@@ -214,6 +215,16 @@ public class practiceJava {
         }
         else{
             return 1;
+        }
+    }
+    public int sortaSum(int a, int b){
+
+        int sum = a + b;
+
+        if (sum >= 10 && sum <= 19){
+            return 20;
+        } else{
+            return sum;
         }
     }
 }
