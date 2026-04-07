@@ -30,10 +30,11 @@ public class practiceJava {
 //        practiceJava t9 = new practiceJava();
 //        System.out.println(t9.maxMod5(2, 3));
         // task-10
-        practiceJava t10 = new practiceJava();
-        System.out.println(t10.blueTicket(9, 1, 0));
+//        practiceJava t10 = new practiceJava();
+//        System.out.println(t10.blueTicket(9, 1, 0));
         // task-11
         practiceJava t11 = new practiceJava();
+        System.out.println(t11.dateFashion(5, 10));
         // task-12
         practiceJava t12 = new practiceJava();
         // task-13
@@ -201,6 +202,18 @@ public class practiceJava {
         }
         else{
             return 0;
+        }
+    }
+    public int dateFashion(int you, int date){
+
+        if (you <= 2 || date <= 2){
+            return 0;
+        }
+        else if (you >= 8 || date >= 8){
+            return 2;
+        }
+        else{
+            return 1;
         }
     }
 }
