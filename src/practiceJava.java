@@ -8,11 +8,13 @@ public class practiceJava {
 //        practiceJava t2 = new practiceJava();
 //        System.out.println(t2.caughtSpeeding(65, true));
     // task-3
-        practiceJava t3 = new practiceJava();
-        System.out.println(t3.love6(6,4));
+//        practiceJava t3 = new practiceJava();
+//        System.out.println(t3.love6(6,4));
     // task-4
         practiceJava t4 = new practiceJava();
-    // task-5
+        System.out.println(t4.more20(20));
+
+        // task-5
         practiceJava t5 = new practiceJava();
     // task-6
         practiceJava t6 = new practiceJava();
@@ -83,5 +85,16 @@ public class practiceJava {
             return false;
         }
     }
+    public boolean more20(int n){
 
+        if (n % 20 == 1){
+            return true;
+        }
+        else if (n % 20 == 2){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
