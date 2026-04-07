@@ -5,21 +5,35 @@ public class practiceJava {
 //    practiceJava t1 = new practiceJava();
 //    System.out.println(t1.cigarParty(30, false)); // false
     // task-2
-        practiceJava t2 = new practiceJava();
-        System.out.println(t2.caughtSpeeding(65, true));
+//        practiceJava t2 = new practiceJava();
+//        System.out.println(t2.caughtSpeeding(65, true));
     // task-3
+        practiceJava t3 = new practiceJava();
+        System.out.println(t3.love6(6,4));
     // task-4
+        practiceJava t4 = new practiceJava();
     // task-5
+        practiceJava t5 = new practiceJava();
     // task-6
+        practiceJava t6 = new practiceJava();
     // task-7
+        practiceJava t7 = new practiceJava();
     // task-8
+        practiceJava t8 = new practiceJava();
     // task-9
+        practiceJava t9 = new practiceJava();
     // task-10
+        practiceJava t10 = new practiceJava();
     // task-11
+        practiceJava t11 = new practiceJava();
     // task-12
+        practiceJava t12 = new practiceJava();
     // task-13
+        practiceJava t13 = new practiceJava();
     // task-14
+        practiceJava t14 = new practiceJava();
     // task-15
+        practiceJava t15 = new practiceJava();
     }
     // end of main method
     //start of sub-methods
@@ -53,6 +67,21 @@ public class practiceJava {
                 return 1 ;
             } else { return 2; }
         }
+    }
+    public boolean love6(int a, int b){
+
+        if (a == 6 || b == 6){
+            return true;
         }
+        else if (a + b == 6){
+            return true;
+        }
+        else if (Math.abs(a - b) == 6){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
 }
