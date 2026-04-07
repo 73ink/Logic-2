@@ -24,10 +24,11 @@ public class practiceJava {
 //        practiceJava t7 = new practiceJava();
 //        System.out.println(t7.twoAsOne(3, 1, 2));
         // task-8
-        practiceJava t8 = new practiceJava();
-        System.out.println(t8.lastDigit(23, 19, 12 ));
+//        practiceJava t8 = new practiceJava();
+//        System.out.println(t8.lastDigit(23, 19, 12 ));
         // task-9
         practiceJava t9 = new practiceJava();
+        System.out.println(t9.maxMod5(2, 3));
         // task-10
         practiceJava t10 = new practiceJava();
         // task-11
@@ -163,6 +164,26 @@ public class practiceJava {
         }
         else{
             return false;
+        }
+    }
+    public int maxMod5(int a, int b){
+
+        if (a == b){
+            return 0;
+        }
+        else if (a % 5 == b % 5){
+            if (a < b){
+                return a;
+            } else{
+                return b;
+            }
+        }
+        else{
+            if (a > b){
+                return a;
+            } else{
+                return b;
+            }
         }
     }
 }
