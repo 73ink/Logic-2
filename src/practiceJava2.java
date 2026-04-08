@@ -22,9 +22,11 @@ public class practiceJava2 {
 //        practiceJava2 t22 = new practiceJava2();
 //        System.out.println(t22.alarmClock(5, false));
         // task-23
-        practiceJava2 t23 = new practiceJava2();
-        System.out.println(t23.specialEleven(22));
+//        practiceJava2 t23 = new practiceJava2();
+//        System.out.println(t23.specialEleven(22));
         // task-24
+        practiceJava2 t24 = new practiceJava2();
+        System.out.println(t24.less20(18));
         // task-25
         // task-26
         // task-27
@@ -146,6 +148,17 @@ public class practiceJava2 {
             return true;
         }
         else if (n % 11 == 1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public boolean less20(int n){
+        if (n % 20 == 18){
+            return true;
+        }
+        else if (n % 20 == 19){
             return true;
         }
         else{
