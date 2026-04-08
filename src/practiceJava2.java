@@ -25,9 +25,11 @@ public class practiceJava2 {
 //        practiceJava2 t23 = new practiceJava2();
 //        System.out.println(t23.specialEleven(22));
         // task-24
-        practiceJava2 t24 = new practiceJava2();
-        System.out.println(t24.less20(18));
+//        practiceJava2 t24 = new practiceJava2();
+//        System.out.println(t24.less20(18));
         // task-25
+        practiceJava2 t25 = new practiceJava2();
+        System.out.println(t25.answerCell(false, false, false));
         // task-26
         // task-27
         // task-28
@@ -163,6 +165,22 @@ public class practiceJava2 {
         }
         else{
             return false;
+        }
+    }
+    public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep){
+        if (isAsleep == true){
+            return false;
+        }
+        else if (isMorning == true){
+            if (isMom == true){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            return true;
         }
     }
 }
