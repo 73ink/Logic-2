@@ -34,9 +34,11 @@ public class practiceJava2 {
 //        practiceJava2 t26 = new practiceJava2();
 //        System.out.println(t26.fizzString2(3));
         // task-27
-        practiceJava2 t27 = new practiceJava2();
-        System.out.println(t27.inOrderEqual(5,5,7,true));
+//        practiceJava2 t27 = new practiceJava2();
+//        System.out.println(t27.inOrderEqual(5,5,7,true));
         // task-28
+        practiceJava2 t28 = new practiceJava2();
+        System.out.println(t28.withoutDoubles(3,3,true));
     }
 
     public String fizzString(String str) {
@@ -203,7 +205,6 @@ public class practiceJava2 {
         }
     }
     public boolean inOrderEqual(int a, int b, int c, boolean equalOk){
-
         if (equalOk == false){
             if (a < b && b < c){
                 return true;
@@ -219,6 +220,24 @@ public class practiceJava2 {
             else{
                 return false;
             }
+        }
+    }
+    public int withoutDoubles(int die1, int die2, boolean noDoubles){
+
+        if (noDoubles == false){
+            return die1 + die2;
+        }
+        else if (die1 != die2){
+            return die1 + die2;
+        }
+        else{
+            die2 = die2 + 1;
+
+            if (die2 > 6){
+                die2 = 1;
+            }
+
+            return die1 + die2;
         }
     }
 }
