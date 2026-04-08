@@ -10,9 +10,11 @@ public class practiceJava2 {
 //     practiceJava2 t18 = new practiceJava2();
 //     System.out.println(t18.lessBy10(1, 7, 11));
     // task-19
-       practiceJava2 t19 = new practiceJava2();
-        System.out.println(t19.redTicket(2, 2, 2));
+//       practiceJava2 t19 = new practiceJava2();
+//        System.out.println(t19.redTicket(2, 2, 2));
     // task-20
+       practiceJava2 t20 = new practiceJava2();
+       System.out.println(t20.shareDigit(12, 43));
     // task-21
     // task-22
     // task-23
@@ -84,6 +86,29 @@ public class practiceJava2 {
         }
         else{
             return 0;
+        }
+    }
+    public boolean shareDigit(int a, int b){
+
+        int leftA = a / 10;
+        int rightA = a % 10;
+        int leftB = b / 10;
+        int rightB = b % 10;
+
+        if (leftA == leftB){
+            return true;
+        }
+        else if (leftA == rightB){
+            return true;
+        }
+        else if (rightA == leftB){
+            return true;
+        }
+        else if (rightA == rightB){
+            return true;
+        }
+        else{
+            return false;
         }
     }
 }
