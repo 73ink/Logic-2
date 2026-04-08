@@ -31,9 +31,11 @@ public class practiceJava2 {
 //        practiceJava2 t25 = new practiceJava2();
 //        System.out.println(t25.answerCell(false, false, false));
         // task-26
-        practiceJava2 t26 = new practiceJava2();
-        System.out.println(t26.fizzString2(3));
+//        practiceJava2 t26 = new practiceJava2();
+//        System.out.println(t26.fizzString2(3));
         // task-27
+        practiceJava2 t27 = new practiceJava2();
+        System.out.println(t27.inOrderEqual(5,5,7,true));
         // task-28
     }
 
@@ -198,6 +200,25 @@ public class practiceJava2 {
         }
         else{
             return n + "!";
+        }
+    }
+    public boolean inOrderEqual(int a, int b, int c, boolean equalOk){
+
+        if (equalOk == false){
+            if (a < b && b < c){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            if (a <= b && b <= c){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
     }
 }
