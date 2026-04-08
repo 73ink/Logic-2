@@ -7,9 +7,11 @@ public class practiceJava2 {
 //    practiceJava2 t17 = new practiceJava2();
 //        System.out.println(t17.inOrder(1, 2, 3, false));
     // task-18
-     practiceJava2 t18 = new practiceJava2();
-     System.out.println(t18.lessBy10(1, 7, 11));
+//     practiceJava2 t18 = new practiceJava2();
+//     System.out.println(t18.lessBy10(1, 7, 11));
     // task-19
+       practiceJava2 t19 = new practiceJava2();
+        System.out.println(t19.redTicket(2, 2, 2));
     // task-20
     // task-21
     // task-22
@@ -67,6 +69,21 @@ public class practiceJava2 {
         }
         else{
             return false;
+        }
+    }
+    public int redTicket(int a, int b, int c){
+
+        if (a == 2 && b == 2 && c == 2){
+            return 10;
+        }
+        else if (a == b && b == c){
+            return 5;
+        }
+        else if (b != a && c != a){
+            return 1;
+        }
+        else{
+            return 0;
         }
     }
 }
