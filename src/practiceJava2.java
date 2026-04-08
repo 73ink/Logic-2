@@ -16,12 +16,14 @@ public class practiceJava2 {
 //        practiceJava2 t20 = new practiceJava2();
 //        System.out.println(t20.shareDigit(12, 43));
         // task-21
-        practiceJava2 t21 = new practiceJava2();
-        System.out.println(t21.squirrelPlay(95, true));
+//        practiceJava2 t21 = new practiceJava2();
+//        System.out.println(t21.squirrelPlay(95, true));
         // task-22
-        practiceJava2 t22 = new practiceJava2();
-        System.out.println(t22.alarmClock(5, false));
+//        practiceJava2 t22 = new practiceJava2();
+//        System.out.println(t22.alarmClock(5, false));
         // task-23
+        practiceJava2 t23 = new practiceJava2();
+        System.out.println(t23.specialEleven(22));
         // task-24
         // task-25
         // task-26
@@ -136,6 +138,18 @@ public class practiceJava2 {
             else{
                 return "off";
             }
+        }
+    }
+    public boolean specialEleven(int n){
+
+        if (n % 11 == 0){
+            return true;
+        }
+        else if (n % 11 == 1){
+            return true;
+        }
+        else{
+            return false;
         }
     }
 }
