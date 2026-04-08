@@ -4,9 +4,11 @@ public class practiceJava2 {
 //    practiceJava2 t16 = new practiceJava2();
 //    System.out.println(t16.fizzString("fib"));
     // task-17
-    practiceJava2 t17 = new practiceJava2();
-        System.out.println(t17.inOrder(1, 2, 3, false));
+//    practiceJava2 t17 = new practiceJava2();
+//        System.out.println(t17.inOrder(1, 2, 3, false));
     // task-18
+     practiceJava2 t18 = new practiceJava2();
+     System.out.println(t18.lessBy10(1, 7, 11));
     // task-19
     // task-20
     // task-21
@@ -52,5 +54,19 @@ public class practiceJava2 {
             }
         }
     }
+    public boolean lessBy10(int a, int b, int c){
 
+        if (Math.abs(a - b) >= 10){
+            return true;
+        }
+        else if (Math.abs(a - c) >= 10){
+            return true;
+        }
+        else if (Math.abs(b - c) >= 10){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
