@@ -1,9 +1,11 @@
 public class practiceJava2 {
     public static void main(String[] args) {
     // task-16
-    practiceJava2 t16 = new practiceJava2();
-    System.out.println(t16.fizzString("fib"));
+//    practiceJava2 t16 = new practiceJava2();
+//    System.out.println(t16.fizzString("fib"));
     // task-17
+    practiceJava2 t17 = new practiceJava2();
+        System.out.println(t17.inOrder(1, 2, 3, false));
     // task-18
     // task-19
     // task-20
@@ -31,6 +33,24 @@ public class practiceJava2 {
         }
     }
 
+    public boolean inOrder(int a, int b, int c, boolean bOk){
 
+        if (bOk == false){
+            if (b > a && c > b){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            if (c > b){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    }
 
 }
