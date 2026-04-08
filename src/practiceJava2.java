@@ -19,6 +19,8 @@ public class practiceJava2 {
         practiceJava2 t21 = new practiceJava2();
         System.out.println(t21.squirrelPlay(95, true));
         // task-22
+        practiceJava2 t22 = new practiceJava2();
+        System.out.println(t22.alarmClock(5, false));
         // task-23
         // task-24
         // task-25
@@ -114,6 +116,25 @@ public class practiceJava2 {
                 return true;
             } else {
                 return false;
+            }
+        }
+    }
+    public String alarmClock(int day, boolean vacation){
+
+        if (vacation == false){
+            if (day >= 1 && day <= 5){
+                return "7:00";
+            }
+            else{
+                return "10:00";
+            }
+        }
+        else{
+            if (day >= 1 && day <= 5){
+                return "10:00";
+            }
+            else{
+                return "off";
             }
         }
     }
